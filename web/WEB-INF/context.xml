@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/DataGreenFlower">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="15" maxIdle="100" maxWait="50" name="jdbc/FLOWER" password="QDMyrt30846" type="javax.sql.DataSource" url="jdbc:mysql://node93629-env-7056096.in1.cloudjiffy.net:3306/datagreenflower" username="root">
+    </Resource>
+</Context>
+

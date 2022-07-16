@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+/*inicio de sesion*/
+
+#input, #boton_inicio{
+    border-radius: 2px;
+    margin: 4px auto 4px auto;
+    display: block;
+}
+#input{
+
+    background: #ffffff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    color: #000000;
+    padding: 6px;
+    height: 20px;
+    width: 200px;
+    font-weight: lighter;
+}
+#boton_inicio{
+    float: right;
+    padding: 6px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 3px;
+    outline: none;
+    width: auto;
+    margin-right: 5px;
+
+}
+.regresar{
+    background-color: #bdecd6;
+}
+
+#menu{
+    height: auto;
+    width: 350px;
+    padding: 0 60px 0 60px;
+    margin: auto;
+    box-shadow: 0 4px 10px #1b1b1b;
+    border-radius: 8px;
+    background: #ffffff;
+}
+#inicio_superior{
+    margin-bottom: 60px;
+
+}
+a{  
+    text-decoration: none;
+    color:1b1b1b;
+}
+#logo_datagreen{
+
+    display: block;
+    margin-top: 15px;
+    width:180px;
+    height:55px;
+    opacity: 90%;
+    float: right;
+}
+#imagen_fondo{
+    margin-top:33px;
+    width: 400px;
+    height: 100px;
+    position: relative;
+}
+#a{
+    text-decoration: none;
+    color: #000000;
+}
+#olvide{
+
+    font-size: 12px;
+    font-weight: lighter;
+}
+#ingreso{
+    margin-top: 100px;
+}
+.contraseña{
+    display: block;
+    width: 150;
+}
+#mesaje{
+    color: red;
+}
+#mesaje_correcto{
+    color:#00bb2d;
+}
+/*-----------------------------------------------------------------------------------------*/
+/*estilos pagina bodega */
+#reportes{
+    display-iline: block;
+}
+#saludo{
+    margin: 2% 0% 2% 2%;
+}
+#scroll {
+    overflow:scroll;
+    height:66%;
+
+}
+#scroll::-webkit-scrollbar{
+    width: 3px;
+    width: 3px;
+    background: #bdecbd;
+    border-radius: 15px;
+
+}
+th, td{
+    padding: 20px;
+    text-align:center;
+}
+table {
+    overflow: scroll;
+    opacity: 100%;
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+    overflow-x:scroll;
+
+}
+thead{
+    background-color: #eeeeee;
+    border-bottom: solid 5px #aced;
+}
+tr:nth-child(even){
+    background-color: #dddd;
+}
+tr:hover td{
+    background-color: #f4f5bb;
+}
+#barra_navegacion{
+    margin-left: 1%;
+    display: inline-block;
+}
+.select_bodega{
+    border: none;
+    background-color: #EAF2E3; 
+    outline: none;
+}
+#busqueda{
+    margin-left: 6px;
+    height: 30px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+.botones-bodega{
+    background-color: #ffffff;
+    height: 40px;
+    padding: 6px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: 4px double #666666;
+    outline: none;
+}
+#imagen-arboles{
+    display: block;
+    float: right;
+    margin-right: 10%;
+
+
+}
+#imagen-arbol{
+    float: left;
+    margin-right: 4px;
+
+}
+h4{
+    margin-top: 10px;
+}
+#caja-de-carton{
+    float: left;
+}
+/*..........................................................................*/
+/*estilos ficas*/
+#campos_tabla_operarios{
+    height: 100%;
+    width: 100%;
+    background-color: #EAF2E3;
+    border: none;
+    outline: none;
+}
+#busqueda-FINCAS{
+    background: #ffffff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    color: #000000;
+    padding: 6px;
+    height: 20px;
+    width: 200px;
+    font-weight: lighter;
+}
+.botones-finca{
+    background-color: #ffffff;
+    height: 40px;
+    padding: 6px;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    border-left: 4px double #666666;
+    outline: none;
+}
+#imagen_hojas{
+    display: inline-block;
+}
+#fincasT{
+    height: 100%;
+}
+html,body{
+    margin:0px;
+    height:100%;
+}
+#select_ingreso{
+    margin-left: 3px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    outline: none;
+}
+.th_tabla_fincas_operarios{
+    padding: 0;
+    opacity: 80%;
+}
+#select_fincas{
+    padding: 8px;
+    opacity: 50%;
+    margin: 10px 0 10px 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: solid 2px;
+    outline: none;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*estilos usuarios*/
+#select-usuario{
+    background: #ffffff;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    color: #000000;
+    padding: 6px;
+    height: 35px;
+    width: 200px;
+    font-weight: lighter;
+
+}
+#imagen_usuario{
+    display: inline-block;
+}
+#info_usuario{
+    display: inline-block;
+
+}
+/*-----------------------------------------------------------------------------------------------*/
+#ifo_oper{
+    margin: 5px;
+}
+h3{
+    margin: 3px;
+
+}
+/*-------------------------------------------------------------------*/
+/*olvide contraseNa*/
+#title_olvide{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+.form_olvide{
+    height: 300px;
+    width: 350px;
+    padding: 0 60px 0 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: auto;
+    box-shadow: 0 4px 10px #1b1b1b;
+    border-radius: 8px;
+    background: #ffffff;
+}
+.icon_olvide{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    position: absolute;
+    margin-left: 20px;
+}
+.input_olvide{
+    display: inline-block;
+}
+/*registro------------------------------------------*/
+.menu_registro_usuario{
+    height: 300px;
+    width: 350px;
+    padding: 20px 60px 20px 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: auto;
+    box-shadow: 0 4px 10px #1b1b1b;
+    border-radius: 8px;
+    background: #ffffff;
+
+}
+#correcto_img{
+    display:block;
+    margin:auto;
+    height: 100px;
+    width: 100px;
+}
+/*-----------------------------------------------------------------------------------------*/
+/*estilos pagina bodega_mas+ */
+#div_mas_bodega{
+    display:iline-block;
+
+}
+.imagen_hojas-mas{
+    display:iline-blok;
+    float:right;
+}
+/*estilos acciones tabla */
+#drop{
+    text-decoration: none;
+    color: #5dbb63;
+}
+#edid{
+    text-decoration: none;
+    color: #cb3234;
+}
+
+#div_infomacion_lotes{
+    verflow:scroll;
+    height:66%;
+    background: #000000;
+}
+.form_agregar{
+    height: 500px;
+    width: 350px;
+    padding: 0 60px 0 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: auto;
+    box-shadow: 0 4px 10px #1b1b1b;
+    border-radius: 8px;
+    background: #ffffff;
+}
+.tabla_agregar{
+    height: 10px;
+}
+.th_agregar{
+    text-align: left;
+    padding: 1px;
+}
+.medidas_titulo{
+    margin-top: 20px;
+}
+.form_infolotes{
+    height: 500px;
+    width: 550px;
+    padding: 0 60px 0 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: auto;
+    box-shadow: 0 4px 10px #1b1b1b;
+    border-radius: 8px;
+    background: #ffffff;
+}
+#true{
+    background-color: #FF8A80;
+}
+footer{
+    background: white;
+}
+#logo_in{
+	display: inline-block;
+	height: 60px;
+	height: 35px;
+        margin-top: 20px;
+}

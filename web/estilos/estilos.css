@@ -1,0 +1,397 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    min-height: 100vh;
+    background: #fff;   
+}
+.nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    width: 70px;
+    border-radius: 10px;
+    box-sizing: initial;
+    border-left: 5px solid #a9e159;
+    background: #a9e159;
+    transition:  0.5s;
+    overflow-x: hidden;
+}
+.nav.active{
+    width: 300px;
+}
+
+.nav ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 5px;
+    padding-top: 40px;
+}
+.nav ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.nav ul li b:nth-child(1){
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+.nav ul li b:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 20px;
+    background: #a9e159;
+
+}
+.nav ul li b:nth-child(2){
+    position: absolute;
+    bottom: -20px;
+    height: 20px;
+    width: 100%;
+    background: #fff;
+    display: none;
+}
+.nav ul li b:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    background: #a9e159;
+
+}
+.nav ul li.active b:nth-child(1),
+.nav ul li.active b:nth-child(2){
+    display: block;
+}
+.nav ul li.active{
+    background:#fff;
+}
+.nav ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+.nav ul li.active a{
+    color: #a9e159;
+}
+.nav ul li a .ico{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+.nav ul li a .ico ion-icon{
+    font-size:1.5em;
+}
+.nav ul li a .title{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: normal;
+}
+.toggle{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #a9e159;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle.active{
+    background: #2c7873;
+}
+.toggle ion-icon{
+    position: absolute;
+    color: #fff;
+    font-size: 34px;
+    display: none;
+}
+.toggle ion-icon.open,
+.toggle.active ion-icon.close{
+    display: block;
+
+}
+.toggle ion-icon.close,
+.toggle.active ion-icon.open{
+    display: none;
+
+}
+.pantalla{
+    margin-top:50px;
+    position: relative;
+    left: 110px;
+    transition: 0.5s;
+    overflow-x: hidden;
+    width: 100%;
+}
+.pantalla.active{
+    left: 400px;
+    transition: 0.5s;
+    overflow-x: hidden;
+}
+tr, th{
+    text-align: center;
+    padding: 3px;
+}
+.div_colores input, .div_colores div, .div_colores div div, #window2 div input{
+    margin-top: 10px;
+}
+
+.div_degradado input, .div_degradado div,.div_degradado div div, #window2 div input{
+    margin-top:10px;
+}
+#window div div h5 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+#window div {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+#window2 div{
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-left: 6%;
+    }
+}
+table tr td input{
+    border:none;
+    text-align:center;
+    width: auto;
+    outline:none;
+}
+div_fincas{
+    margin-top:40px;
+    display:inline-block;
+    width:260px;
+}
+#floresSm,#variedadesSm{
+    display: inline-block;
+    width:auto;
+    margin-top:30px;
+
+}
+#variedadesSm{
+    margin-left:20px;
+}
+#flores, #variedad{
+    margin-top: 40px;
+    position: relative;
+
+}
+#variedad, #degradado{
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative; 
+    width: 250px; 
+}
+
+#window2{
+    margin-top: 20px;
+}
+#flores, #colores{
+    width: 250px; 
+}
+#accionesFlores,#contenerAccionesColores{
+    display: flex;
+}
+.fehcas{
+    display: inline-block;
+}
+#datosCorte, #datosEncabezadoSiembra{
+    width: 100%;
+    display: flex;
+}
+#respuestaSemanas{
+    margin-left: 10px;
+    margin-top: auto;
+}
+#selectSiembra{
+    display: flex;
+}
+#selectSiembra select{
+    margin-top: 3.8%;
+    height: 30px;
+}
+#datosCorte td{
+    text-align: right;
+}
+#datosCorte td{
+    text-align: right;
+    border-top: solid 1px;
+    text-align: center;
+    
+}
+#datosCorte td h3{
+    margin-top: 5px;
+}
+#datosCorte td select{
+    border: none;
+}
+#canastilla1, .canastillas{
+    display: flex;
+}
+.capos_tabla_siembra{
+    padding: 10px;
+    
+}
+.input_date_siembra{
+    width: auto;
+    text-align: left;
+}
+table{
+     border-collapse:collapse;
+}
+table td{
+    border: solid 1px;
+}
+table td select{
+    border: none;
+}
+.lotesIngresados td{
+    text-align: center;
+    border: solid 1px;
+}
+.lotesIngresados td input{
+    width: 70px;
+}
+ table {
+  table-layout: fixed;
+  width: auto;  
+ }
+#siembreTABLA {
+     font-size: 10px;
+    table-layout: fixed;
+    width: 250px;
+}
+
+#siembreTABLA th, #siembreTABLA td {
+    width: 230px;
+    word-wrap: break-word;
+}
+#siembreTABLA td select, #siembreTABLA table td input{
+    width: 60px;
+    font-size:10px;
+}
+#siembreTABLA td input{
+    width: 55px;
+   
+}
+#siembreTABLA #fecha{
+    width: auto;
+}
+#siembreTABLA td .inputCodigo{
+    width: 70px;
+}
+#siembreTABLA tfoot .cellTotales{
+    border: solid 2px;
+}
+#siembreTABLA tfoot .cellFot{
+    border: none;
+}
+#iconoBoton{
+    font-size: 25px;
+}
+.botonesSimbra{
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    width: 50px;
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2c7873;
+}
+.botonesSimbra ion-icon{
+    margin-left: 12px;
+    color: #fff;
+    font-size: 34px;
+
+}
+.botonesSimbraEdit{
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    width: 50px;
+    height: 130px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2c7873;
+}
+.botonesSimbraEdit ion-icon{
+    margin-left:13px;
+
+    color: #fff;
+    font-size: 34px;
+
+}
+
+.botonesSimbraEdit ion-icon{
+    margin-top: 5px;
+    color: #fff;
+    font-size: 34px;
+
+}
+#iconoBotonEliminarEspecifica{
+    margin-top:4px;
+    margin-left:4px;
+    font-size:25px;
+    color:#000;
+}
+
+#codigosFincaQuestion{
+    display: flex;
+}
+
+#codigosFincaQuestion h4{
+    margin-top: 9px;
+}
+.botonesSimbraEditQuestion{
+    margin-top: 5px;
+    color: #000;
+    font-size: 34px;
+     
+
+}
